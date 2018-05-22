@@ -15,9 +15,11 @@ namespace MyBot
             DiscordSocketClient client = new DiscordSocketClient();
             client.Log += Log;
 
-            string token = "blahblahblah";
+            string token = System.IO.File.ReadAllText("AbyssBot.secret");
             await client.LoginAsync(TokenType.Bot, token);
             await client.StartAsync();
+
+            client.MessageReceived += MessageReceived;
 
             await Task.Delay(-1); //stops the program from exiting main until the program is closed
 
@@ -28,6 +30,30 @@ namespace MyBot
             Console.WriteLine(msg.ToString());
             return Task.CompletedTask;
         }
+
+        private async Task MessageReceived(SocketMessage message)
+        {
+            if (message.Content == "!hello")
+            {
+                await message.Channel.SendMessageAsync("Herro oni-chan!");
+            }
+
+            if (message.Content == "!test")
+            {
+                await message.Channel.SendMessageAsync("Test!");
+            }
+
+            if (message.Content == "!emotetest")
+            {
+                await message.Channel.SendMessageAsync("<a:SpriteServerTest1:448373306207240192> <a:SpriteServerTest2:448374244079042561> ");
+            }
+
+            if (message.Content == "!pm")
+            {
+                await message.Author.SendMessageAsync("This is a test, oni-chan!");
+            }
+        }
+
     }
 }
 
