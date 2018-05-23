@@ -58,6 +58,10 @@ namespace MyBot
                 await message.Author.SendMessageAsync(" <a:SpriteServerTest1:448373306207240192> <a:SpriteServerTest2:448374244079042561> PARTY TIME <a:SpriteServerTest2:448374244079042561> <a:SpriteServerTest1:448373306207240192>");
                 await message.Author.SendMessageAsync("<a:Test8:448380788019298324> <a:Test9:448380871171637260> <a:Test7:448380787075842051> https://gifsound.com/?gifv=5xa3bCB&v=NvS351QKFV4&s=70 <a:Test7:448380787075842051> <a:Test9:448380871171637260><a:Test8:448380788019298324>");
             }
+            if (message.Content == "!This is a test")
+            {
+                await message.Channel.SendMessageAsync("This is a test of the development branch");
+            }
         }
 
     }
