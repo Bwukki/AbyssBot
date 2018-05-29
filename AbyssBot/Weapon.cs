@@ -4,13 +4,12 @@ using System.Text;
 
 namespace AbyssBot
 {
-    class Weapon
+    class Weapon : Item
     {
-        string name;
+        
         int damage;
-        int accuracy;
+        int accuracy; //probably not going to be used
         int quality;
-        int type;
-
+        int damageType;
     }
 }

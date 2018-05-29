@@ -8,5 +8,6 @@ namespace AbyssBot
     {
         int xp;
         int stamina;
+        string buffs; //probably separate them with some kind of delimiter then iterate through whenever you want them.. alternative use a List<t> or maybe an array
     }
 }
