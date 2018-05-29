@@ -1,14 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-public class Weapon
+namespace AbyssBot
 {
-	public Weapon()
-	{
+    class Weapon
+    {
         string name;
         int damage;
         int accuracy;
         int quality;
         int type;
-        int level;
-	}
+
+    }
 }

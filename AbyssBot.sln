@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbyssBot", "AbyssBot\AbyssBot.csproj", "{EFFF027F-2322-421F-A02F-6E84667C1C31}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{67959B3D-1E90-462D-8350-C094515E1784}"
-	ProjectSection(SolutionItems) = preProject
-		Weapon.cs = Weapon.cs
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
